@@ -1,9 +1,17 @@
 <%# If the message is I am going to work, the coach will answer Great!
-If the message has a question mark ? at the end, the coach will answer Silly question, get dressed and go to work!.
-Otherwise the coach will answer I don't care, get dressed and go to work! %>
+<%# If the message has a question mark ? at the end, the coach will answer Silly question, get dressed and go to work!. %>
+<%# Otherwise the coach will answer I don't care, get dressed and go to work! %>
 
+<div class="container d-flex justify-content-center mt-5">
 
-<p>You : "<%= @question %>"</p>
-<p>Coach : "<%= @answer %>"</p>
+  <ul>
+    <li>You said : "<%= @question %>"</li>
+    <li>Coach : "<%= @answer %>"</li>
+  </ul>
+  <div>
+    <button class="mt-5">
+      <%= link_to "back to question", ask_path %>
+    </button>
+  </div>
 
-<%= link_to "back to question", ask_path %>
+</div>
