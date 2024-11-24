@@ -1,14 +1,15 @@
 <div class="container d-flex justify-content-center flex-column align-items-center m-5">
   <h3 calss="m-3">Good morning!☀️ what do you want to say to your coarch?</h3>
-  <form action="/answer" data-turbo="false">
+
+  <form action="/answer" data-turbo="false" class="m-4 row  d-flex justify-content-center">
     <%# <input type="text" name="query"> %>
-    <select name="query" class="form-select" class="form-control">
-      <option value="I am going to work">I am going to work(仕事に行ってきます)</option>
-      <option value="What time is it?">What time is it?</option>
-      <option value="Can I take a day off?">Can I take a day off?</option>
-      <option value="What time is it?">What time is it?</option>
-      <option value="I liked this breakfast">I liked this breakfast(今日の朝ごはん美味しかったな)</option>
+    <select name="query" class="form-select" class="form-control col-12">
+      <option value="I am going to work">I am going to work (仕事に行ってきます)</option>
+      <option value="What time is it?">What time is it? (今何時ですか？)</option>
+      <option value="Can I take a day off?">Can I take a day off? (今日はお休みしてもいいですか？)</option>
+      <option value="I liked this breakfast">I liked this breakfast (今日の朝ごはん美味しかったな)</option>
     </select>
-    <input type="submit" value="Ask!">
+    <input type="submit" value="Ask!" class="col-4 m-4">
   </form>
+
 </div>
